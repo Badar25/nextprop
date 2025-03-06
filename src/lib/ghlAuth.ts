@@ -105,12 +105,9 @@ export const SCOPES = [
 const isProduction = process.env.NODE_ENV === 'production' || process.env.NETLIFY === 'true';
 
 export const GHL_AUTH_CONFIG = {
-  clientId: process.env.NEXT_PUBLIC_GHL_CLIENT_ID || '67c7e02f74be2556d96030df-m7wwc9vn',
-  clientSecret: process.env.GHL_CLIENT_SECRET || '6736b036-6551-4faa-b71a-ce53d365085e',
-  redirectUri: process.env.REDIRECT_URL || 'https://dynamic-mousse-3b0df1.netlify.app/api/auth/callback',
-    // isProduction
-    // ? 'https://nextpropai.netlify.app/api/auth/callback'
-    // : 'http://localhost:3000/api/auth/callback',
+  clientId: '67c7e02f74be2556d96030df-m7wwc9vn',
+  clientSecret: '6736b036-6551-4faa-b71a-ce53d365085e',
+  redirectUri: 'https://dynamic-mousse-3b0df1.netlify.app/api/auth/callback', 
   baseUrl: 'https://marketplace.gohighlevel.com',
   tokenUrl: 'https://services.leadconnectorhq.com/oauth/token'
 };
